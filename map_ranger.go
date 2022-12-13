@@ -14,11 +14,11 @@ var (
 )
 
 func main() {
-	fmt.Println("先設定一格長度")
-	thebase = thefirst()
-	fmt.Printf("%d", int(thebase))
 	fmt.Println("輸入比例尺")
 	fmt.Scanln(&meter)
+	fmt.Println("設定一格長度")
+	thebase = thefirst()
+	fmt.Printf("%d", int(thebase))
 	for {
 		getrange()
 	}
