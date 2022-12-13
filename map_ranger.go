@@ -51,6 +51,6 @@ func getrange() {
 		x2, y2 = robotgo.GetMousePos()
 		therange := int(math.Sqrt((math.Pow(float64(x2-x1), 2) + math.Pow(float64(y2-y1), 2))) / thebase * meter)
 		fmt.Printf("%d\n", int(math.Sqrt((math.Pow(float64(x2-x1), 2) + math.Pow(float64(y2-y1), 2)))))
-		fmt.Printf("距離 :%d\n", therange)
+		fmt.Printf("距離:%d\n", therange)
 	}
 }
