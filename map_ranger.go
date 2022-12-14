@@ -32,7 +32,6 @@ func firststep() float64 {
 }
 
 func getrange() {
-
 	fmt.Println("按下滑鼠中鍵以設定起點")
 	x1, y1 = togetmousepos()
 	fmt.Println(("按下滑鼠中鍵以設定終點"))
