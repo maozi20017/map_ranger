@@ -35,7 +35,7 @@ func firststep() float64 {
 	if ok {
 		x2, y2 = robotgo.GetMousePos()
 	}
-	return math.Sqrt(math.Pow(float64(x2-x1), 2) + math.Pow(float64(y2-y1), 2))
+	return math.Hypot(math.Abs(float64(x2-x1)), math.Abs(float64(y2-y1)))
 }
 
 func getrange() {
@@ -49,7 +49,7 @@ func getrange() {
 	ok = gohook.AddMouse("center")
 	if ok {
 		x2, y2 = robotgo.GetMousePos()
-		therange := int(math.Sqrt((math.Pow(math.Abs(float64(x2-x1)), 2) + math.Pow(math.Abs(float64(y2-y1)), 2))) / baselength * meter)
+		therange := int(math.Hypot(math.Abs(float64(x2-x1)), math.Abs(float64(y2-y1))) / baselength * meter)
 		fmt.Printf("距離:%d\n", therange)
 	}
 }
