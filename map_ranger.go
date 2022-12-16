@@ -43,7 +43,7 @@ func getrange() {
 func togetmousepos() (x int, y int) {
 	ok := gohook.AddMouse("center") //原本是robotgo.AddEvent 已改成 gohook.AddEvent
 	if ok {
-		x1, y1 = robotgo.GetMousePos()
+		x, y = robotgo.GetMousePos()
 	}
 	return x, y
 }
