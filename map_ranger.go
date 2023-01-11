@@ -14,6 +14,7 @@ var (
 )
 
 func main() {
+Here:
 	fmt.Println("輸入比例尺")
 	fmt.Scanln(&meter)
 	fmt.Println("設定一格長度")
@@ -45,5 +46,6 @@ func togetmousepos() (x int, y int) {
 	if ok {
 		x, y = robotgo.GetMousePos()
 	}
+	goto Here
 	return x, y
 }
